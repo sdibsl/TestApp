@@ -1,0 +1,43 @@
+Setup
+
+$sudo apt-get install git-core
+
+$wget http://kernel.org/pub/software/scm/git/git-1.7.2.3.tar.gz
+
+$tar -xvf git-1.7.2.3.tar.gz
+
+$cd git-1.7.2.3/
+
+$sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-
+dev libssl-dev
+
+$make prefix=/usr/local all
+
+$sudo make prefix=/usr/local install
+
+
+
+
+Upload File on Githug by command line
+
+$git clone ghttps://github.com/sdibsl/TestApp.git
+
+$cd TestApp (Folder Name)
+$git tag
+
+$git fetch
+$git init
+
+$touch read_upload_git_data.txt
+
+$git add read_upload_git_data.txt
+
+$git comit -m 'Comment for new file added'
+
+$git remote add origin https://github.com/sdibsl/TestApp
+
+$git push origin master
+
+
+File uploaded succesfully
+
